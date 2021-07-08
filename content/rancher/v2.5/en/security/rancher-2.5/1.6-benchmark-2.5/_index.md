@@ -2755,7 +2755,7 @@ systemctl restart kubelet.service
 Identify all clusterrolebindings to the cluster-admin role. Check if they are used and
 if they need this role or if they could use a role with fewer privileges.
 Where possible, first bind users to a lower privileged role and then remove the
-clusterrolebinding to the cluster-admin role :
+clusterrolebinding to the cluster-admin role:
 kubectl delete clusterrolebinding [name]
 
 
@@ -3070,8 +3070,8 @@ it is set to an empty array.
 **Result:** warn
 
 **Remediation:**
-Review the use of capabilites in applications runnning on your cluster. Where a namespace
-contains applicaions which do not require any Linux capabities to operate consider adding
+Review the use of capabilites in applications running on your cluster. Where a namespace
+contains applications which do not require any Linux capabilities to operate consider adding
 a PSP which forbids the admission of containers which do not drop all capabilities.
 
 
